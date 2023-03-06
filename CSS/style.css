@@ -1,0 +1,117 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+
+a{
+    color: black;
+    
+}
+div{
+    text-align: center;
+}
+
+h2{
+    width: 110px;
+    padding: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+h2:hover{
+    color: white;
+}
+body{
+    background-image: url(../imagens/fundohome.jpg);
+    background-position: center;
+    background-size: 2000px;
+}
+#main-site1{
+    width: auto;
+}
+#sobre{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#bemvindo{
+    margin: auto;
+    width: auto;
+    max-width: 1500px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background: rgb(65,65,252);
+    background: linear-gradient(90deg, rgba(65,65,252,1) 20%, rgba(252,50,50,1) 80%);
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+}
+#texto{
+    
+    max-width: 800px;
+    border: 5px solid;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    width: auto;
+    margin: auto;
+    margin-bottom: 90px;
+    padding: 10px;
+   
+}
+#texto2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#botao{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1000px;
+    gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#h2-botao{
+     background-color: rgb(65, 65, 241);
+}
+#botao2{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 685px;
+    margin-top: 20px; 
+    font-family: 'Open Sans', sans-serif; 
+}
+
+
+#h2-botao2{
+   background-color: rgb(253, 65, 65);
+}
+@media screen and (max-width: 950px) {
+    #botao,h4{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 500px;
+    }
+    #botao2{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 500px;
+        margin-top: 20px;
+        gap: 20px;
+        
+    }
+    h2{
+        background: rgb(65,65,252);
+    background: linear-gradient(90deg, rgba(65,65,252,1) 20%, rgba(252,50,50,1) 80%);
+    }
+}

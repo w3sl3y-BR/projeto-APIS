@@ -1,0 +1,90 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    background-image: url(../imagens/fundotempo.jpg);
+    background-position:center;
+    background-size: 1950px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h1{
+    width: 400px;
+    border: solid 5px white;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    font-size: 40px;
+    background-color: lightblue;
+
+
+}
+h2{
+    margin-top: 10px;
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+h6{
+    font-size: 25px;
+    margin-top: 15px;
+}
+footer{
+    text-align: center;
+    border-top: solid 4px black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+input{
+    width: 200px;
+    height: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: solid 3px black;
+}
+
+#links{
+    justify-content: center;
+    display: flex;
+    flex-direction:row ;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    background-color: white;    
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#links :hover{
+    color: grey;
+}
+#titulo{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+#caixa{
+    border: solid 5px white;
+    border-radius: 20px;
+    width: 600px;
+    height: 230px;
+    margin-top: 100px;
+    margin-bottom: 369px;
+    text-align: center;
+    background: rgb(250,212,114);
+background: linear-gradient(40deg, rgba(250,212,114,1) 30%, rgba(117,222,255,1) 70%);
+}
+#botao,button{
+    background-color: whitesmoke;
+    width: 100px;
+    font-size: 20px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="CSS/styletempo.css">
+</head>
+<body>
+<header>
+    <div id="links">
+        <a href="cep.html">
+            <h4> Cep </h4>
+        </a>
+        
+        <a href="dolar.html">
+            <h4> Dólar</h4>
+        </a>
+        <a href="index.html">
+            <h4> Home </h4>
+        </a>
+        <a href="indexprodutos.html">
+            <h4>JSON</h4>
+        </a>
+        <a href="indextempo.html">
+            <h4>Clima</h4>
+        </a>
+        <a href="indexAPIfake.html">
+            <h4>API-Fake</h4>
+        </a>
+    </div>
+</header>
+
+<h1> API de Tempo</h1>
+
+    
+<div id="caixa">
+
+ <div id="titulo">
+    <p id="temperatura">Digite um lugar: <br>País/Estado/Cidade</p>
+</div>
+    
+    <input type="text" id="buscar">
+    <br>
+    <div id="botao">
+    <button onclick="getWeather()" id="buscar">Buscar</button>
+</div>
+</div>
+    <script>
+        //Biblioteca Axios para realizar uma
+        //requisição HTTP a API da OpenWeatherMAP e
+        //obter a previsão
+
+        //Esta linha define a função getWeather como
+        //uma função assincrona.Esperando uma 
+        //resposta da API
+
+        async function getWeather() {
+
+            try {
+                buscar = document.getElementById('buscar').value;
+
+                //Nesta linha fazendo uma chamada a API usando a biblioteca AXIOS. A URL da API inclui as informações de localização (Mogi das Cruzes), a unidade de medida (Celsius) e chave API KEY.
+                const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${buscar}&units=metric&appid=64ed82577ced7f69cb1687f0ce536131`);
+                //Resposta em (Celsius e a localização) e armazenar na variável tempCelsius
+
+                const tempCelsius = response.data.main.temp;
+                document.querySelector('#temperatura').innerHTML = `<h2>A Temperatura atual em ${buscar} é de ${tempCelsius.toFixed(2)}°C. </h2>`;
+
+            } catch (error) {
+                document.querySelector('#temperatura').innerHTML = `Erro ao encontrar localização`;}    
+    }
+
+    </script>
+
+    <footer>
+        <h6>© Wesley Bazilio Todos os direitos reservados</h6>
+    </footer>
+</body>
+
+</html>
+
+

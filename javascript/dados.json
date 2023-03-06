@@ -1,0 +1,17 @@
+{   
+    "imagem": "<img src='imagens/anya.png' width='350px'>",
+    "nome": "Nome: Anya",
+    "anime": "Anime: SpyXFamily",
+    "preco": "Preço: R$ 29,90",
+    
+    "imagem2": "<img src='imagens/nezuko.jpg' width='350px'>",
+    "nome2": "Nome: Nezuko",
+    "anime2": "Anime: Demon Slayer",
+    "preco2": " R$ 29,90",
+   
+    "imagem3": "<img src='imagens/umaru.jpg' width='350px'>",
+    "nome3": "Nome: Umaru",
+    "anime3": "Anime: Umaru-chan R",
+    "preco3": " R$ 29,90"
+    
+}
